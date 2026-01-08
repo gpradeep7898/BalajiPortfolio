@@ -108,22 +108,22 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'balajibestha4@gmail.com',
-      link: 'mailto:balajibestha4@gmail.com',
+      value: 'balajib@myjobemails.com',
+      link: 'mailto:balajib@myjobemails.com',
       color: '#00d4ff'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 551-328-3929',
+      value: '+1 (551) 328-3929',
       link: 'tel:+15513283929',
       color: '#00ffff'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Jersey City, NJ',
-      link: 'https://maps.google.com/?q=Jersey+City+NJ',
+      value: 'New Jersey, USA',
+      link: 'https://maps.google.com/?q=New+Jersey+USA',
       color: '#ff6b6b'
     }
   ]

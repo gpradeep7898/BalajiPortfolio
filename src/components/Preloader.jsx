@@ -10,8 +10,8 @@ const Preloader = ({ onFinish }) => {
       { opacity: 1 },
       {
         opacity: 0,
-        delay: 2.2,
-        duration: 1.2,
+        delay: 0.1,
+        duration: 0.2,
         ease: 'power2.inOut',
         onComplete: onFinish
       }

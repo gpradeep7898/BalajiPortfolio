@@ -9,11 +9,11 @@ const Hero = () => {
           BALAJI BESTHA
         </h1>
         <p className="mt-4 text-lg md:text-xl text-gray-700">
-          Data Analyst | ML Enthusiast | Cloud Explorer
+          Software Engineer | Full-Stack Developer | Cloud Architect
         </p>
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="/Balaji_Bestha_Resume.pdf" // Ensure your resume is in the /public folder
+            href="/resume.pdf" // Ensure your resume is in the /public folder
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-accent text-accent px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-accent hover:text-white"

@@ -12,7 +12,8 @@ import {
   Database,
   TrendingUp,
   Shield,
-  Zap
+  Zap,
+  Code
 } from 'lucide-react'
 
 // 3D Timeline Node
@@ -128,41 +129,37 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Data Analyst Intern",
-      company: "Phoenix Global",
-      location: "Hyderabad, India",
-      period: "Jan 2023 – Aug 2023",
+      title: "Software Engineer",
+      company: "Databricks",
+      location: "Remote, USA",
+      period: "Aug 2024 – Present",
       description: [
-        "Collected, profiled, and cleaned raw business data from multiple sources, including internal databases and third-party APIs using Python (Pandas, NumPy) and SQL, improving data reliability across analytics teams.",
-        "Designed and developed automated Power BI dashboards to visualize sales trends, customer acquisition metrics, and operational KPIs, reducing reporting turnaround time by 35%.",
-        "Conducted comprehensive Exploratory Data Analysis (EDA) on structured and semi-structured datasets to identify hidden patterns and outliers that informed senior leadership decisions.",
-        "Wrote advanced SQL queries with joins, aggregations, subqueries, and CTEs to extract insights from normalized data schemas and build repeatable data models.",
-        "Identified data quality issues through root cause analysis and implemented validation logic to ensure data integrity and compliance, leading to a 20% improvement in reporting accuracy.",
-        "Developed and delivered over 10+ ad hoc analysis reports for marketing, finance, and operations teams to support initiatives such as budget allocation, retention modeling, and revenue forecasting.",
-        "Collaborated with cross-functional stakeholders to understand business requirements and convert them into scalable, data-driven solutions through KPIs and visual storytelling.",
-        "Documented all data pipelines, queries, and dashboards with clear metadata and standardized templates to align with internal data governance protocols and facilitate onboarding for new analysts."
+        "Architected Django-based financial compliance portal integrating with Databricks Lakehouse APIs, processing regulatory records monthly, improving audit reporting speed by 34% across multiple enterprise banking clients.",
+        "Engineered React.js dashboards with real-time WebSocket connections, visualizing risk indicators from Databricks Delta Lake, enabling compliance officers to detect anomalies 29% faster compared to quarterly legacy audits.",
+        "Implemented secure OAuth2-based authentication with role-specific access, integrating Django REST API with Databricks clusters, reducing unauthorized data queries by 41% during monitored internal penetration testing cycles.",
+        "Optimized ETL orchestration pipelines through Django Celery tasks triggering Databricks jobs, reducing daily processing runtime from 9.5 hours to 6.2 hours, improving SLA adherence for financial transactions.",
+        "Collaborated with auditors and compliance officers to deploy automated regulatory dashboards in React.js, aligning datasets from Databricks, ensuring 27% improvement in reporting accuracy during quarterly federal banking audits."
       ],
-      technologies: ["Python", "Pandas", "NumPy", "SQL", "Power BI", "EDA", "Data Quality", "Data Modeling"],
+      technologies: ["Python", "Django", "Django REST Framework", "React.js", "TypeScript", "WebSockets", "OAuth2", "Databricks", "Celery", "PostgreSQL"],
       icon: Database,
       color: "#4A908C"
     },
     {
-      title: "Cybersecurity Intern",
-      company: "Cisco Systems",
-      location: "Remote",
-      period: "Apr 2022 – Oct 2022",
+      title: "Software Engineer",
+      company: "LTIMindtree",
+      location: "Remote, India",
+      period: "Sept 2021 – Jul 2023",
       description: [
-        "Developed and deployed Python-based tools for log parsing, alert generation, and anomaly detection, enabling real-time monitoring and reducing manual triage time by over 40%.",
-        "Performed penetration testing, threat modeling, and vulnerability assessments on application codebases and system configurations, identifying key security gaps that were remediated before release.",
-        "Built structured security dashboards in Excel and internal tools to monitor trends in threat types, frequency of alerts, and escalation effectiveness over time.",
-        "Leveraged regular expressions (regex) and pattern recognition to build classifiers for detecting brute force attacks, phishing attempts, and port scanning behaviors in server logs.",
-        "Worked closely with the Security Operations Center (SOC) team to create playbooks and escalation procedures for handling critical and high-severity alerts efficiently.",
-        "Applied cybersecurity principles such as the CIA triad (Confidentiality, Integrity, Availability) and OWASP Top 10 to the development of scripts and detection logic.",
-        "Delivered a presentation series to junior security analysts and interns on secure scripting practices, highlighting common misconfigurations, injection risks, and log hygiene practices.",
-        "Documented all automation scripts and tool configurations with thorough change logs and user guides to maintain audit readiness and support internal training efforts."
+        "Architected scalable e-commerce backend with Django REST Framework, integrating PostgreSQL and caching, optimizing checkout workflows, reducing response latency by 34%, and enabling smooth transactions for 15,000 daily customers.",
+        "Developed React.js product catalog with Redux and TypeScript, implementing dynamic filters and pagination, improving load times by 41%, and enhancing user engagement across 22,000 monthly active retail platform users.",
+        "Integrated secure OAuth2 and JWT authentication in Django APIs, streamlining login/registration, reducing unauthorized access attempts by 47%, and ensuring compliance with PCI-DSS across e-commerce payment workflows.",
+        "Automated CI/CD pipelines with Jenkins and Docker for Django microservices and React builds, reducing deployment cycles by 38%, accelerating release velocity, and improving rollback reliability across staging environments.",
+        "Built real-time inventory dashboard using Django Channels and WebSockets, synchronizing product availability across 18 warehouses, decreasing stock mismatch errors by 29%, and improving fulfillment accuracy significantly.",
+        "Implemented Tableau-powered analytics with Django data pipelines, visualizing KPIs like order volume, revenue growth, and returns, enabling managers to identify demand patterns and improve quarterly forecasting accuracy by 21%.",
+        "Collaborated with QA teams implementing Cypress and PyTest automation, catching 26% more pre-production defects, reducing customer-reported issues by 19%, and ensuring smooth feature delivery within Agile sprints."
       ],
-      technologies: ["Python", "Log Parsing", "Regex", "Penetration Testing", "SOC", "OWASP", "Security Dashboards"],
-      icon: Shield,
+      technologies: ["Python", "Django", "Django REST Framework", "React.js", "Redux", "TypeScript", "PostgreSQL", "Redis", "OAuth2", "JWT", "Jenkins", "Docker", "WebSockets", "Tableau", "Cypress", "PyTest"],
+      icon: Code,
       color: "#4A908C"
     }
   ]
@@ -218,7 +215,7 @@ const Experience = () => {
               <span className="heading-text">Experience</span>
             </h2>
             <p className="text-xl text-[#555] max-w-3xl mx-auto">
-              My professional journey through data analysis, machine learning, and cybersecurity roles
+              My professional journey as a Software Engineer building full-stack applications and scalable systems
             </p>
           </motion.div>
 

@@ -120,23 +120,23 @@ const About = () => {
   })
 
   const skills = [
-    { name: 'Python', icon: Code, level: 90 },
-    { name: 'SQL', icon: Database, level: 95 },
-    { name: 'Machine Learning', icon: Brain, level: 85 },
-    { name: 'Cloud Platforms', icon: Cloud, level: 85 },
-    { name: 'Data Visualization', icon: TrendingUp, level: 90 },
+    { name: 'Python (Django, FastAPI)', icon: Code, level: 95 },
+    { name: 'React.js & TypeScript', icon: Code, level: 90 },
+    { name: 'Cloud Platforms (AWS, Azure)', icon: Cloud, level: 90 },
+    { name: 'Databases (PostgreSQL, MongoDB)', icon: Database, level: 95 },
+    { name: 'DevOps (Docker, Kubernetes, CI/CD)', icon: Cloud, level: 85 },
   ]
 
   const education = [
     {
-      degree: "Master's in Computer Science",
-      school: "Pace University, New York",
-      period: "Sep 2023 - May 2025",
+      degree: "Master of Science, Computer Science",
+      school: "Pace University, New York, USA",
+      period: "Aug 2023 - May 2025",
       icon: GraduationCap
     },
     {
-      degree: "Bachelor's in Computer Science",
-      school: "Srinivasa Ramanujan Institute of Technology, India",
+      degree: "Bachelor of Technology",
+      school: "Srinivasa Ramanujan Institute of Technology, Andhra Pradesh, India",
       period: "Aug 2019 - May 2023",
       icon: GraduationCap
     }
@@ -231,9 +231,10 @@ const About = () => {
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.8, delay: 0.3 }}
                 >
-                  I'm a passionate Computer Science graduate with 2+ years of experience in data analysis, 
-                  business intelligence, and machine learning. My journey spans from internships to academic 
-                  projects, where I've developed expertise in transforming complex data into actionable insights.
+                  Software Engineer with 3+ years of experience designing and delivering full-stack applications 
+                  using Python (Django, REST Framework, FastAPI) and React.js with TypeScript. Skilled in 
+                  architecting secure, scalable APIs, building dynamic front-end interfaces, and integrating 
+                  real-time data visualization with Power BI and Tableau.
                 </motion.p>
                 
                 <motion.p
@@ -241,19 +242,10 @@ const About = () => {
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.8, delay: 0.4 }}
                 >
-                  I specialize in SQL, Python, data visualization, and cloud platforms (Azure, AWS). 
-                  My work involves building dashboards, conducting exploratory data analysis (EDA), 
-                  and developing predictive models using machine learning algorithms.
-                </motion.p>
-                
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={inView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.8, delay: 0.5 }}
-                >
-                  I'm passionate about using data to uncover trends, reduce uncertainty, and drive 
-                  smarter decisions across business units. My strong understanding of data quality, 
-                  risk metrics, and root cause analysis helps me excel in operational and reporting environments.
+                  Proficient in cloud platforms (AWS, Azure), CI/CD automation (Jenkins, GitHub Actions, Docker, 
+                  Kubernetes), and database optimization (PostgreSQL, MySQL, MongoDB). Adept at end-to-end 
+                  development, performance tuning, and delivering measurable business impact across domains in 
+                  Agile environments.
                 </motion.p>
               </div>
             </motion.div>
@@ -269,26 +261,26 @@ const About = () => {
               <div className="space-y-2">
                 <div className="flex items-center space-x-3 text-[#555]">
                   <MapPin size={20} className="text-accent" />
-                  <span>Jersey City, NJ</span>
+                  <span>New Jersey, USA</span>
                 </div>
                 <div className="flex items-center space-x-3 text-[#555]">
                   <Phone size={20} className="text-accent" />
-                  <span>+1 551-328-3929</span>
+                  <span>+1 (551) 328-3929</span>
                 </div>
                 <div className="flex items-center space-x-3 text-[#555]">
                   <Mail size={20} className="text-accent" />
-                  <span>balajibestha4@gmail.com</span>
+                  <span>balajib@myjobemails.com</span>
                 </div>
               </div>
             </motion.div>
 
-            {/* Skills */}
+            {/* Key Skills (Progress Bars) */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
             >
-              <h3 className="text-2xl font-semibold text-accent mb-6">Technical Skills</h3>
+              <h3 className="text-2xl font-semibold text-accent mb-6">Key Skills</h3>
               <div className="space-y-4">
                 {skills.map((skill, index) => (
                   <motion.div
@@ -316,11 +308,77 @@ const About = () => {
               </div>
             </motion.div>
 
+            {/* Comprehensive Technical Skills */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={inView ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <h3 className="text-2xl font-semibold text-accent mb-6">Technical Skills</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  <h4 className="text-lg font-semibold text-[#2C3E50]">Front-End Development</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {['React.js', 'Redux', 'JavaScript (ES6+)', 'TypeScript', 'Next.js', 'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap', 'Responsive & Mobile-First Design', 'Web Accessibility (WCAG)', 'Figma', 'Jest', 'Cypress', 'React Testing Library'].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-light-gray text-accent text-sm rounded-full border border-accent/30">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="text-lg font-semibold text-[#2C3E50]">Back-End & API Development</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {['Python', 'Django', 'Django REST Framework', 'FastAPI', 'Flask', 'RESTful APIs', 'GraphQL', 'Node.js', 'Express.js', 'Microservices Architecture', 'JWT', 'OAuth2', 'API Gateway', 'Role-Based Access Control (RBAC)'].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-light-gray text-accent text-sm rounded-full border border-accent/30">
+                        {tech}
+                      </span>
+                    ))}</div>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="text-lg font-semibold text-[#2C3E50]">Databases & Storage</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Firebase', 'SQL Server', 'Data Modeling', 'Query Optimization'].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-light-gray text-accent text-sm rounded-full border border-accent/30">
+                        {tech}
+                      </span>
+                    ))}</div>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="text-lg font-semibold text-[#2C3E50]">Cloud & DevOps</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {['AWS (EC2, S3, RDS, Lambda, API Gateway, Cognito, ECS)', 'Microsoft Azure', 'Docker', 'Kubernetes (EKS, AKS, Helm, ArgoCD)', 'Terraform', 'Jenkins', 'GitHub Actions', 'CI/CD Pipelines', 'Linux Administration'].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-light-gray text-accent text-sm rounded-full border border-accent/30">
+                        {tech}
+                      </span>
+                    ))}</div>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="text-lg font-semibold text-[#2C3E50]">Data Visualization & Analytics</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {['Power BI', 'Tableau', 'Matplotlib', 'Seaborn', 'KPI Dashboards', 'Business Intelligence Solutions'].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-light-gray text-accent text-sm rounded-full border border-accent/30">
+                        {tech}
+                      </span>
+                    ))}</div>
+                </div>
+                <div className="space-y-3">
+                  <h4 className="text-lg font-semibold text-[#2C3E50]">Tools & Others</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {['Apache Kafka', 'RabbitMQ', 'Nginx', 'Swagger/OpenAPI', 'Postman', 'Prometheus', 'Grafana', 'ELK Stack', 'Splunk', 'Jira', 'Confluence', 'Agile/Scrum', 'Data Reporting'].map((tech) => (
+                      <span key={tech} className="px-3 py-1 bg-light-gray text-accent text-sm rounded-full border border-accent/30">
+                        {tech}
+                      </span>
+                    ))}</div>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Education */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.5 }}
+              transition={{ duration: 0.8, delay: 0.7 }}
             >
               <h3 className="text-2xl font-semibold text-accent mb-6">Education</h3>
               <div className="space-y-4">
