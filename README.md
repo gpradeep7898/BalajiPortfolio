@@ -1,6 +1,6 @@
 # Balaji Bestha - Portfolio Website
 
-A stunning, fully responsive 3D portfolio website built with modern web technologies showcasing Balaji Bestha's expertise in data analysis, machine learning, and cloud platforms.
+A stunning, fully responsive 3D portfolio website built with modern web technologies showcasing Balaji Bestha's expertise as a Software Engineer specializing in full-stack development, cloud platforms, and scalable system architecture.
 
 ## 🌟 Features
 
@@ -26,43 +26,33 @@ A stunning, fully responsive 3D portfolio website built with modern web technolo
 
 3. **Experience Timeline**:
    - Vertical timeline with smooth animations
-   - Detailed work experience at Phoenix Global and Cisco
+   - Detailed work experience at Databricks and LTIMindtree
    - Technology tags and achievement lists
    - Interactive hover effects
 
-4. **Projects Showcase**:
-   - 3D carousel-style project navigation
-   - Featured projects with detailed descriptions
-   - Technology stacks and feature lists
-   - GitHub and demo links
-
-5. **GitHub Integration**:
-   - Auto-fetch repository data (mock implementation)
-   - Sort and filter functionality
-   - Repository stats (stars, forks, watchers)
-   - Language color coding
-
-6. **Contact Section**:
+4. **Contact Section**:
    - Modern animated contact form
    - Social media links with 3D hover effects
    - LinkedIn profile integration
    - Form validation and submission feedback
 
 ### 🛠 Technical Stack
-- **Frontend**: React 18 with Vite
-- **3D Graphics**: Three.js with React Three Fiber
+- **Frontend**: React 18 with Vite, TypeScript
+- **3D Graphics**: Three.js with React Three Fiber and Drei
 - **Animations**: GSAP and Framer Motion
 - **Styling**: TailwindCSS with custom animations
 - **Icons**: Lucide React
-- **Type Animation**: React Type Animation
 - **Intersection Observer**: React Intersection Observer
+- **Backend Technologies**: Python (Django, FastAPI), Node.js
+- **Databases**: PostgreSQL, MongoDB, Redis
+- **Cloud & DevOps**: AWS, Azure, Docker, Kubernetes
 
 ## 🚀 Installation
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/balajibestha/portfolio.git
-   cd portfolio
+   git clone https://github.com/gpradeep7898/BalajiPortfolio.git
+   cd BalajiPortfolio
    ```
 
 2. **Install dependencies**:
@@ -109,29 +99,20 @@ Update the following files to customize content:
 - `src/components/About.jsx` - About section and skills
 - `src/components/Experience.jsx` - Work experience
 - `src/components/Projects.jsx` - Project details
-- `src/components/GitHub.jsx` - GitHub repositories
 - `src/components/Contact.jsx` - Contact information
 
 ### 3D Elements
 Modify 3D objects in individual component files:
-- Hero: `AnimatedSphere` in `Hero.jsx`
-- About: `FloatingCube` in `About.jsx`
-- Projects: `ProjectTorus` in `Projects.jsx`
-- Contact: `ContactOctahedron` in `Contact.jsx`
+- About: `DataNodeAvatar` and `WireframeRing` in `About.jsx`
+- Experience: `TimelineNode` and `FloatingCubes` in `Experience.jsx`
+- Projects: `ProjectCard3D` and `FloatingTechIcons` in `Projects.jsx`
+- Contact: `ParticleField` and `FloatingContactIcons` in `Contact.jsx`
+- Background: `GlowingOrb` in `Background3D.jsx`
 
 ## 🔧 Configuration
 
-### GitHub Integration
-To enable real GitHub API integration, replace the mock data in `GitHub.jsx`:
-
-```javascript
-// Replace mock data with actual API call
-const response = await fetch('https://api.github.com/users/balajibestha/repos')
-const data = await response.json()
-```
-
 ### Form Submission
-Update the contact form submission in `Contact.jsx` to integrate with your backend or email service.
+Update the contact form submission in `Contact.jsx` to integrate with your backend or email service. Currently, the form simulates submission for demonstration purposes.
 
 ## 📱 Responsive Design
 
@@ -174,7 +155,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-- **Email**: balajibestha4@gmail.com
+- **Email**: balajib@myjobemails.com
+- **Phone**: +1 (551) 328-3929
+- **Location**: New Jersey, USA
 - **LinkedIn**: [Balaji Bestha](https://linkedin.com/in/balaji-bestha-0129b029b)
 - **GitHub**: [balajibestha](https://github.com/balajibestha)
 
